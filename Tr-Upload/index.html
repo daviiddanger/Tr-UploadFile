@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tr-Android | UploadFile</title>
+    <script src="https://kit.fontawesome.com/fdb3e831b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" class="dropzone-box">
+        <h2>Cargar y adjuntar archivos</h2>
+        <p>Adjuntar archivos a este proyecto</p>
+        <div class="dropzone-area">
+            <div class="file-upload-icon">
+                <i class="fa-regular fa-file"></i>
+            </div>
+            <p>Haga clic para cargar o arrastre y suelte</p>
+            <input type="file" required id="upload-file" name="uploaded-file">
+            <p class="message">No hay archivos seleccionados</p>
+        </div>
+        <div class="dropzone-actions">
+            <button type="reset">Cancelar</button>
+            <button type="submit" id="submit-button" class="subUpload">Subir</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

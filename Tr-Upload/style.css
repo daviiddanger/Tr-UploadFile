@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-image: url(https://get.wallhere.com/photo/artwork-digital-art-landscape-nature-mountains-2189543.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.dropzone-box{
+    backdrop-filter: blur(50px);
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0px 8px 24px #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 36rem;
+    width: 100%;
+}
+
+.fa-file{
+    font-size: 80px;
+    margin-bottom: 25px;
+}
+
+.dropzone-box h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.dropzone-area{
+    padding: 1rem;
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed #fff;
+    border-radius: 1rem;
+    color: #fff;
+}
+.dropzone-area:hover{
+    color: #000;
+}
+
+.dropzone-area [type="file"]{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dropzone-actions{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid #d3d3d3;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.dropzone-actions button{
+    flex-grow: 1;
+    min-height: 3rem;
+    font-size: 1.2rem;
+}
+
+.subUpload:hover{
+    background-color: #fff;
+    border: #fff;
+}
+
+.dropzone-actions button[type='reset']:hover{
+    background-color: red;
+}
+
+.dropzone-actions button[type='reset']{
+    background-color: transparent;
+    border: 1px solid #d3d3d3;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dropzone-actions button{
+    background-color: #2bff00;
+    border: 1px solid #2bff00;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #000;
+    cursor: pointer;
+}
